@@ -12,9 +12,10 @@ body {
   font-family: "Open Sans", sans-serif;
   background-image: url(https://ghostselite.com/wp-content/uploads/2013/05/cod-ghosts-elite-background.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: black;
+  height:100vh;
 }
 
 .addFriendsDiv {

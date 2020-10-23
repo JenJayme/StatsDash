@@ -1,0 +1,74 @@
+/* Styling for NewChoose page */
+
+.aboutHead, .aboutText {
+    color: white;
+}
+
+.aboutProjectPaper {
+    color: white;
+    /* background-color: black; */
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2em;
+    background-image: url('../components/NewChoose/backgroundsmoke.jpg');
+    background-size: cover;
+}
+
+
+.Container-NC{
+    background-image: url(../components/NewChoose/backgroundsmoke.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 2500px; */
+    height: fit-content;
+    
+    }
+    /* .card-contentNC:hover{
+    
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    
+    }  */
+
+    .card-contentNC{
+    background-color: black;
+    color: white;
+    }
+/*     
+    .NC-card{
+        margin-bottom: 15%;
+        box-shadow: 0px 0px 20px 10px rgb(7, 7, 7);
+
+    } */
+
+
+ /* Styling for New Tournament Page    */
+    /* .Container-NT{
+        background-image: url(../components/NewChoose/parallaxgreybg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+;
+        
+        } */
+
+        .card-NT{
+            background-color: rgb(12, 11, 11);
+            box-shadow: 0px 0px 20px 10px rgb(245, 240, 240);
+          
+        }
+
+       /* Styling for Tournament Dashboard    */  
+.backgroundNT{
+    background-image: url(../components/NewChoose/parallaxgreybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+ 

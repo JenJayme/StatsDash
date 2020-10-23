@@ -9,6 +9,7 @@ import logo from '../Navigation/br-logo-horizontal.png';
 import { AuthContext } from "../../Auth";
 import { withRouter, Redirect } from "react-router";
 import { useHistory } from "react-router-dom";
+import "./nav.css"
 
 import app from "../../firebase";
 
@@ -18,10 +19,11 @@ function Navigation() {
     const history = useHistory();
     function handleOnclick(event){
         event.preventDefault();
-        app.auth().signOut().then(()=>{
+        return app.auth().signOut().then(()=>{
             alert("OK we're signing you out.");
             console.log("HELLO");
             console.log(currentUser);
+            history.push("/");
         });
 
      
@@ -29,17 +31,17 @@ function Navigation() {
     }
     return (
         
-            <Navbar width={100} collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar className="navbar" collapseOnSelect expand="lg" >
                 <div className="container">
                 <Navbar.Brand href="/"><img src={logo} width="140px"></img> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/myhome">My Home</Nav.Link>
-                        {/* <Nav.Link href="/dashboard">Dashboard</Nav.Link> */}
-                        <Nav.Link href="/newplayer">New Player</Nav.Link>
-                        <Nav.Link href="/newtournament">New Tournament</Nav.Link>
-                        <Nav.Link href="/new/friends">Add Friends</Nav.Link>
+                        <Nav.Link style={{color: "white"}} href="/myhome">My Home</Nav.Link>
+                        {/* <Nav.Link style={{color: "white"}} href="/dashboard">Dashboard</Nav.Link> */}
+                        <Nav.Link style={{color: "white"}} href="/newplayer">New Player</Nav.Link>
+                        <Nav.Link style={{color: "white"}} href="/newtournament">New Tournament</Nav.Link>
+                        <Nav.Link style={{color: "white"}} href="/new/friends">Add Friends</Nav.Link>
                     </Nav>
                     <Nav>
                         {/* <Form inline>
@@ -47,9 +49,10 @@ function Navigation() {
                             <Button variant="outline-primary">Search</Button>
                         </Form> */}
 
-                        {/* <Nav.Link href="/new">New</Nav.Link> */}
+                        {/* <Nav.Link  style={{color: "white"}}href="/new">New</Nav.Link> */}
+                        <Nav.Link  style={{color: "white"}}href="/about">About</Nav.Link>
                         {/* <Nav.Link href="/new/player">New Player</Nav.Link> */}
-                        <Nav.Link onClick = {handleOnclick}>Sign Out</Nav.Link>
+                        <Nav.Link style={{color: "white"}}onClick = {handleOnclick}>Sign Out</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </div>

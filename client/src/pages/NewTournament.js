@@ -136,34 +136,34 @@ const NewTournament= () =>{
     // render() {
         
         return (
-            <div>
-            <Container className="background">
+            <div className="backgroundNT">
+            <Container>
                 <Navigation />
             <Row>
-                <Col><h3 className="my-5 text-center">Create a Tournament</h3></Col>
+                <Col><h3 style={{color:"white"}}className="my-5 text-center">Create a Tournament</h3></Col>
             </Row>
 
             <Row>
                 <Col md={2}></Col>
                 <Col md={8}>
-                    <Card>
-                        <Card.Body>
+                    <Card >
+                        <Card.Body className="card-NT">
                             <Form onSubmit ={handleFormSubmit}>
                             <Form.Group controlId="formNumGamesTournament">
-                                <Form.Label >Number of Games per Tournament (maximum 19)</Form.Label>
+                                <Form.Label style={{color:"white"}}>Number of Games per Tournament (maximum 19)</Form.Label>
                                 <Form.Control name= "games" type="text" placeholder="Enter Number" />
                             </Form.Group>
 
                             <Form.Group controlId="formTournamentName">
-                                <Form.Label>Tournament Name (optional)</Form.Label>
+                                <Form.Label style={{color:"white"}}>Tournament Name (optional)</Form.Label>
                                 <Form.Control name= "title" type="text" placeholder="Enter Name" />
                             </Form.Group>
 
                             <br></br>
-                            <Button variant="dark" size="sm" className="d-block mb-3" onClick={handleModalShowHide}>
+                            <Button  className="pulse btn wow animated d-block mb-3" onClick={handleModalShowHide}>
                                 Adjust Game Settings
                             </Button>
-                            <Button variant="dark" size="sm" type="submit">
+                            <Button className="pulse btn wow animated"type="submit">
                                 Generate Link
                             </Button>
                             </Form>             

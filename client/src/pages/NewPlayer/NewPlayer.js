@@ -6,11 +6,12 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
-import app from "../firebase";
+import app from "../../firebase";
 import {withRouter} from "react-router";
-import API from "../utils/API";
-import Navigation from "../components/Navigation";
-import styles from './CreateNewTournament/style.css';
+import API from "../../utils/API";
+import Navigation from "../../components/Navigation";
+import styles from '../../pages/CreateNewTournament/style.css';
+import "./style.css"
 
 
 
@@ -50,19 +51,19 @@ const NewPlayer = ({history}) =>{
 
 
     return (
-        <div>
-            <Container className="background">
-            <Navigation />
+        <div className="Np-Page"><Container>
+                <Navigation /><br></br><br></br>
 
-            <Row>
+
+            {/* <Row>
                 <Col><h3 className="my-5 text-center">New Player</h3></Col>
-            </Row>
+            </Row> */}
 
             <Row>
-                <Col md={2}></Col>
-                <Col md={8}>
-                    <Card>
-                        <Card.Body className="modalBkgLight">
+                {/* <Col md={1}></Col> */}
+                <Col md={6}>
+                    <Card style={{backgroundColor: "transparent"}} className="NP-card">
+                        <Card.Body >
                             <Form onSubmit = {handleSignUp}>
                                 <Form.Row>
                                     <Col>
@@ -136,7 +137,7 @@ const NewPlayer = ({history}) =>{
 
                             <Form.Row>
 
-                                <Button variant="dark" type="submit" size="sm" block>
+                                <Button  type="submit" size="sm" block>
                                     Submit
                                 </Button>
 
@@ -149,9 +150,7 @@ const NewPlayer = ({history}) =>{
                 </Col>
                 <Col md={2}></Col>
             </Row>
-            </Container>
-            </div>
-
+            </Container></div>
         )
 }
 

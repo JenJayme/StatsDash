@@ -18,7 +18,7 @@ Bragging Rights is a unique React-powered platform that offers gaming enthusiast
 * [Repo URL](https://github.com/seyouny/StatsDash)
 
 ### <a id="demo">View a demo:</a> 
-* [Deployed on Heroku](https://obscure-escarpment-21392.herokuapp.com/#demo)
+* [Deployed on Heroku](https://dashboard.heroku.com/apps/limitless-ocean-05272/settings)
 <hr>
 
 ## [Visuals](#visuals)

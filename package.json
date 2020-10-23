@@ -36,6 +36,7 @@
     "emailjs-com": "^2.6.3",
     "express": "^4.17.1",
     "firebase": "^7.18.0",
+    "font-awesome": "^4.7.0",
     "if-env": "^1.0.4",
     "mysql": "^2.18.1",
     "mysql2": "2.1.0",
